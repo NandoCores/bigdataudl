@@ -83,8 +83,14 @@ orderlistfrench <- listfrench[order(listfrench$totalproblem, listfrench$correctp
 orderlistspanish <- listspanish[order(listspanish$totalproblem, listspanish$correctproblem, decreasing = TRUE),]
 orderlistchinese <- listchinese[order(listchinese$totalproblem, listchinese$correctproblem, decreasing = TRUE),]
 
+fix(orderlistfrench)
+fix(orderlistspanish)
+fix(orderlistchinese)
 
 
+plot(orderlistfrench$correctproblem, orderlistfrench$totalproblem, main = "French dictation", xlab = "Correct problems", ylab="Total problems")
+plot(orderlistspanish$correctproblem, orderlistspanish$totalproblem, main = "Spanish dictation", xlab = "Correct problems", ylab="Total problems")
+plot(orderlistchinese$correctproblem, orderlistchinese$totalproblem, main = "Chinese dictation", xlab = "Correct problems", ylab="Total problems")
 
 
 
