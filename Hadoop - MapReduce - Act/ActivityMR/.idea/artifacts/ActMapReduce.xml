@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ActMapReduce">
+    <output-path>$PROJECT_DIR$/../../Artefactos</output-path>
+    <root id="archive" name="ActMapReduce.jar">
+      <element id="module-output" name="ActivityMR" />
+    </root>
+  </artifact>
+</component>
